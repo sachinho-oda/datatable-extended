@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Datatable w/ Record Lookup" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <!-- Datatable -->
+            <c-data-table-extended
+                key-field="Id"
+                data={data}
+                columns={columns}
+                draft-values={draftValues}
+                show-row-number-column
+                hide-checkbox-column
+                oncellchange={handleCellChange}
+            ></c-data-table-extended>
+        </div>
+    </lightning-card>
+</template>
